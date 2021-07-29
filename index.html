@@ -44,6 +44,11 @@
             margin-right: 60px;
             margin-left: 60px;
         }
+    .img{
+        box-shadow: 1px 1px;
+    }
+
+
     </style>
 </head>
 <body>
@@ -58,6 +63,16 @@
         </div>
     </header>
     <main>
+        <div class="dropdown dropdown-book">
+            <button class="dropdown-toggle" type="button" id="sortselval2" data-toggle="dropdown">도감번호 순서</button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="javascript:;" onclick="sortch('number asc,number_count asc','도감번호 순서')">도감번호 순서</a>
+                <a class="dropdown-item" href="javascript:;" onclick="sortch('number desc,number_count desc','도감번호 반대순서')">도감번호 반대순서</a>
+                <a class="dropdown-item" href="javascript:;" onclick="sortch('weight desc','무거운 순서')">무거운 순서</a>
+                <a class="dropdown-item" href="javascript:;" onclick="sortch('weight asc','가벼운 순서')">가벼운 순서</a>
+                <a class="dropdown-item" href="javascript:;" onclick="sortch('height desc','키 큰 순서')">키 큰 순서</a>
+            </div>
+        </div>
         <ul class="row list-book per1-1" id="pokedexlist">
             <li class="col-lg-2 col-6" id="#pokedex_1">
                 <a href="javascript:pokedex_detail(1, '1');">
@@ -69,7 +84,37 @@
                     <div class="bx-txt">
                         <h3><p>No.001</p> 이상해씨</h3>
 
-                        <p></p>
+                        <span class="badge badge-quad badge-grass sibar" style="background:#7ab766;color:#ffffff;">풀</span>
+                        <span class="badge badge-quad badge-grass sibar" style="background:#a16ec2;color:#ffffff;">독</span>
+                    </div>
+                </a>
+            </li>
+
+            <li class="col-lg-2 col-6" id="#pokedex_1">
+                <a href="javascript:pokedex_detail(1, '1');">
+                    <div class="img">
+                        <div class="tumb-wrp">
+                            <img src="https://data1.pokemonkorea.co.kr/newdata/pokedex/mid/000101.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="bx-txt">
+                        <h3><p>No.001</p> 이상해씨</h3>
+                        <span class="badge badge-quad badge-grass sibar" style="background:#7ab766;color:#ffffff;">풀</span>
+                        <span class="badge badge-quad badge-grass sibar" style="background:#a16ec2;color:#ffffff;">독</span>
+                    </div>
+                </a>
+            </li>
+
+            <li class="col-lg-2 col-6" id="#pokedex_1">
+                <a href="javascript:pokedex_detail(1, '1');">
+                    <div class="img">
+                        <div class="tumb-wrp">
+                            <img src="https://data1.pokemonkorea.co.kr/newdata/pokedex/mid/000101.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="bx-txt">
+                        <h3><p>No.001</p> 이상해씨</h3>
+
                         <span class="badge badge-quad badge-grass" style="background:#7ab766;color:#ffffff;">풀</span>
                         <span class="badge badge-quad badge-grass" style="background:#a16ec2;color:#ffffff;">독</span>
                     </div>
@@ -86,41 +131,7 @@
                     <div class="bx-txt">
                         <h3><p>No.001</p> 이상해씨</h3>
 
-                        <p></p>
-                        <span class="badge badge-quad badge-grass" style="background:#7ab766;color:#ffffff;">풀</span>
-                        <span class="badge badge-quad badge-grass" style="background:#a16ec2;color:#ffffff;">독</span>
-                    </div>
-                </a>
-            </li>
 
-            <li class="col-lg-2 col-6" id="#pokedex_1">
-                <a href="javascript:pokedex_detail(1, '1');">
-                    <div class="img">
-                        <div class="tumb-wrp">
-                            <img src="https://data1.pokemonkorea.co.kr/newdata/pokedex/mid/000101.png" alt="" class="img-fluid">
-                        </div>
-                    </div>
-                    <div class="bx-txt">
-                        <h3><p>No.001</p> 이상해씨</h3>
-
-                        <p></p>
-                        <span class="badge badge-quad badge-grass" style="background:#7ab766;color:#ffffff;">풀</span>
-                        <span class="badge badge-quad badge-grass" style="background:#a16ec2;color:#ffffff;">독</span>
-                    </div>
-                </a>
-            </li>
-
-            <li class="col-lg-2 col-6" id="#pokedex_1">
-                <a href="javascript:pokedex_detail(1, '1');">
-                    <div class="img">
-                        <div class="tumb-wrp">
-                            <img src="https://data1.pokemonkorea.co.kr/newdata/pokedex/mid/000101.png" alt="" class="img-fluid">
-                        </div>
-                    </div>
-                    <div class="bx-txt">
-                        <h3><p>No.001</p> 이상해씨</h3>
-
-                        <p></p>
                         <span class="badge badge-quad badge-grass" style="background:#7ab766;color:#ffffff;">풀</span>
                         <span class="badge badge-quad badge-grass" style="background:#a16ec2;color:#ffffff;">독</span>
                     </div>
@@ -199,4 +210,5 @@
     </main>
 </body>
 <script src="https://kit.fontawesome.com/2cebd7c7df.js" crossorigin="anonymous"></script>
+
 </html>

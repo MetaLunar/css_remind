@@ -1,40 +1,7 @@
-
-header{
-    display: flex;
-    justify-content: space-between;
-}
-.main_icon{
-    height: 100px;
-    width: 200px;
-}
-
-.main_a{
-    margin-top: 28px;
-}
-
-.main_s{
-    margin-right: 25px;
-    font-size: 25px;
-
-}
-
-.main_search{
-    opacity: 0.5;
-}
-
-i{
-    opacity: 0.7;
-    margin-right: 10px;
-}
-
-ul{
-
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
-}
-li{
-    margin-right: 60px;
-    margin-left: 60px;
-}
+<div class="dropdown dropdown-book">
+    <button class="dropdown-toggle"
+    type="button"
+    id="sortselval2"
+    data-toggle="dropdown">도감번호 순서</button>
+                                    <div class="dropdown-menu"><a class="dropdown-item" href="javascript:;" onclick="sortch('number asc,number_count asc','도감번호 순서')">도감번호 순서</a> <a class="dropdown-item" href="javascript:;" onclick="sortch('number desc,number_count desc','도감번호 반대순서')">도감번호 반대순서</a> <a class="dropdown-item" href="javascript:;" onclick="sortch('weight desc','무거운 순서')">무거운 순서</a> <a class="dropdown-item" href="javascript:;" onclick="sortch('weight asc','가벼운 순서')">가벼운 순서</a>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             <a class="dropdown-item" href="javascript:;" onclick="sortch('height desc','키 큰 순서')">키 큰 순서</a> </div></div>
