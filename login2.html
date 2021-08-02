@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <style>
+        .login_big{
+            height: 350px;
+            width: 400px;
+            display: flex;
+            overflow: hidden;
+            position: relative;
+            border-radius: 5px;
+            justify-content: center;
+            margin-top: 30%;
+            box-shadow: inset 0 0 0 3000px rgba(40,43,48,.75);
+            margin-left: 38%;
+        }
+        form{
+            position: relative;
+            text-align: center;
+        }
+        h1{
+            color: white;
+            user-select: none;
+            font-size: 20px;
+            font-weight: 700;
+        }
+        .formsmallbox{
+            text-align: left;
+        }
+        .formDiv{
+            margin-bottom: 30px;
+            width: 300px;
+        }
+
+        p{
+            color: #9FA0A0;
+            font-size: 13px;
+            font-weight: 1000;
+        }
+
+        input[type=password], input[type=email] {
+            background: transparent;
+            border: none;
+            box-shadow: inset 0 -1px 0 rgba(255,255,255,0.15);
+            padding: 15px 0;
+            box-sizing: border-box;
+            color: #fff;
+            width: 100%;
+            transition: 0.2s ease;
+        }
+        input:focus{ outline: none;}
+
+        .acceptBtn {
+            width: 100%;
+            box-sizing: border-box;
+            background: #7289DA;
+            border: none;
+            color: #fff;
+            padding: 20px 0;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: 0.2s ease;
+            user-select: none;
+        }
+    </style>
+</head>
+<body>
+        <div class="login_big">
+            <form>
+                <h1>WELCOME!</h1>
+                <div class="formbox">
+                    <div class="formsmallbox">
+                        <div class="formDiv">
+                            <p>EMAIL</p><input type="email" required="" />
+                        </div>
+                        <div class="formDiv">
+                            <p>PASSWSORD</p><input type="password" required="" />
+                        </div>
+                        <div class="formDiv"><button class="acceptBtn" type="submit">Login</button></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+</body>
+</html>
